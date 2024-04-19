@@ -74,3 +74,7 @@ img {
 .signup-button:hover {
     background-color: #555;
 }
+
+footer {
+    padding: 20px;
+}
