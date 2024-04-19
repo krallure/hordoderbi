@@ -1,3 +1,75 @@
+/* Font-face declarations for Volte Rounded */
+@font-face {
+    font-family: 'Volte Rounded';
+    src: url('res/VolteRounded-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Volte Rounded';
+    src: url('res/VolteRounded-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Volte Rounded';
+    src: url('res/VolteRounded-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Applying the fonts */
+body {
+    font-family: 'Volte Rounded', Arial, sans-serif;
+}
+
+header {
+    font-family: 'Volte Rounded', Arial, sans-serif;
+    font-weight: bold; /* Using Bold for headers */
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Volte Rounded', Arial, sans-serif;
+    font-weight: bold; /* Ensure all headers are bold */
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 2;
+    color: #41124b;
+}
+
+
+h2 {
+    margin-bottom: 10px;
+}
+
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    color: #6801c6;
+}
+
+p, li {
+    font-family: 'Volte Rounded', Arial, sans-serif;
+    font-weight: 500; /* Regular weight for paragraph text */
+}
+
+/* You might want to set medium font weight for specific elements */
+strong {
+    font-family: 'Volte Rounded', Arial, sans-serif;
+    font-weight: 500; /* Medium weight for strong emphasis */
+}
+
+li {
+    list-style: none;
+}
+
 /* Reset default margin and padding */
 * {
     margin: 0;
@@ -14,36 +86,52 @@ body {
     padding:0;
     -webkit-text-size-adjust:none;
     text-size-adjust:none;
-    width: 600px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
     text-align: center;
 }
 
+/* Media query for desktops */
+@media (min-width: 600px) {
+    body {
+        width: 600px; /* Fixed width on desktop */
+    }
+}
+
+
+
 header {
-    background-color: #b3572a;
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+.headline {
+    padding: 56px 0;
+    position: relative;
+    background-color: #d7c4f9;
 }
 
 header h1 {
     margin-bottom: 10px;
 }
 
-section {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
+
+.container {
+    max-width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-h2 {
-    margin-bottom: 10px;
+.row {
 }
+
 
 img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
 }
 
 .video-container {
@@ -77,4 +165,159 @@ img {
 
 footer {
     padding: 20px;
+}
+
+.first_paragraph {
+    background-color: #34076a;
+    color: white;
+    padding: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: VolteRounded !important;
+    position: relative;
+    z-index: 1;
+}
+a { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline;
+} 
+
+a { 
+    color: #007bff; 
+    text-decoration: none; 
+    background-color: transparent;
+} 
+
+.btn { 
+    display: inline-block; 
+    font-weight: 400; 
+    color: #212529; 
+    cursor: pointer; 
+    background-color: transparent; 
+    padding: .375rem .75rem; 
+    font-size: 1rem; 
+    line-height: 1.5; 
+    border-radius: .25rem; 
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} 
+
+.mb-5 { 
+    margin-bottom: 3rem!important;
+} 
+
+.btn { 
+    display: -ms-inline-flexbox; 
+    display: inline-flex; 
+    -ms-flex-direction: row; 
+    flex-direction: row; 
+    -ms-flex-align: center; 
+    align-items: center; 
+    -ms-flex-pack: center; 
+    justify-content: center; 
+    text-align: center; 
+    white-space: nowrap; 
+    vertical-align: middle; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    border: 1px solid transparent; 
+    height: 55px; 
+    border-radius: 30px; 
+    padding: 16px 32px; 
+    font-size: 18px; 
+    font-weight: 700; 
+    line-height: 1; 
+    transition: secondary #fbe122 #87189d #672146 #fbe122 .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; 
+    min-width: 170px; 
+    text-transform: uppercase;
+} 
+
+.btn-shady { 
+    padding: 4px 40px; 
+    border-radius: 30px; 
+    font-size: 18px; 
+    font-style: normal; 
+    font-weight: 900; 
+    line-height: 24px; 
+    text-transform: uppercase; 
+    font-family: Volte Rounded; 
+    background-color: #e0006a; 
+    position: relative; 
+    color: #fff;
+} 
+
+.btn:not([disabled]):not(.disabled) { 
+    cursor: pointer;
+} 
+
+.btn-shady:after { 
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: -1; 
+    background-color: #000; 
+    border-radius: 30px; 
+    transform: rotate(2.6deg) translate(2px,6px);
+} 
+
+a:hover { 
+    color: #0056b3; 
+    text-decoration: underline;
+} 
+
+.btn:hover { 
+    color: #212529; 
+    text-decoration: none;
+} 
+
+.btn:hover { 
+    text-decoration: none;
+} 
+
+.btn-shady:hover { 
+    background-color: #6801c6; 
+    color: #ffbe00;
+} 
+
+.cta {
+    padding-top: 20px;
+}
+
+.race_usp, .partners {
+    background-color: #EAE6d5;
+}
+
+#signup {
+    background-color: #009d8a;
+    padding: 60px 0;
+}
+
+#programterv {
+    background-color: #009d8a;
+    padding: 60px 0;
+}
+
+#images {
+    background-color: #6801c6;
+    padding: 60px 0;
+}
+
+#footer {
+    background-color: #002900;
+    padding: 60px 0;
+    color: white;
 }
