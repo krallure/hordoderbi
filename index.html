@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Village Event</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ1EWVZTXT"></script>
     <script>
@@ -45,7 +48,7 @@
         <div class="container">
             <div class="row">
                 <h1>III. Hordó Derbi</h1>
-                <h4>A XVI. Gyarmati Nyitott pincék napjának keretén belül.</h4>
+                <h3>A XVI. Gyarmati Nyitott pincék napjának keretén belül.</h3>
                     <div class="text-center btn-shady-parent cta">
                         <a class="btn btn-shady mb-5" href="#signup">Jelentkezem</a>
                     </div>
@@ -55,18 +58,8 @@
 
 
 <section id="race_top3">
-    <header style="color: black;">
-        <h1>ŐRÜLET!</h1>
-        <h2>20 induló</h2>
-        <h2>2 féle futam</h2>
-        <h2>350 méter lejtő</h2>
-        <h2>30 mp adrenalin</h2>
-    </header>
-</section>
-
-<section class="race_usp">
     <div class="first_paragraph">
-        <h2>Gyere, tarts velünk a 15. Gyarmati Nyitott pincék napján!</h3>
+        <h2 style="color: black;">Gyere, tarts velünk a 15. Gyarmati Nyitott pincék napján!</h3>
         <br/>
         <p><b>Helyszínek:</b></p>
         <p>- Gyarmati pincesor</p>
@@ -76,31 +69,48 @@
     </div>
 </section>
 
+<section class="race_usp">
+    <header style="color: black;">
+        <h1 class="crazytext">ŐRÜLET!</h1>
+        <h2 style="padding-top: 20px;">20 induló</h2>
+        <h2>2 féle futam</h2>
+        <h2>350 méter lejtő</h2>
+        <h2>30 mp adrenalin</h2>
+    </header>
+</section>
+
 <section id="programterv">
     <div class="container">
-    <h2 style="color: white;">PROGRAMTERV</h2>
+    <h2 style="color: white; text-decoration: underline;">PROGRAMTERV</h2>
         <ul>
-            <li><h4>12:00 - 13:00 Szakmai előadások a Rendezvény téren</h4><br/>
-                Hunyadi István - Magyar Növényorvosi Kamara elnöke<br/>
-                Horváth Sándor - Növényvédelmi szaktanácsadó</li>
-            <li><h4>14:00 - II. Hordó Derbi (Jókai utca)</h4></li>
-            <li><h4>15:00 Pincék nyitása</h4><br/>Kóstold meg a gyarmato borokat! Látogass el a Nyitott pincékbe (demizson jelzi, hogy melyik pince várja a szomjas betérőket). Hozz magaddal poharat a kóstoláshoz, vagy vásárolj a helyszínen magadnak egyet.
+            <li><h4>12:00 - 13:00 Szakmai előadások a Rendezvény téren</h4>
+                <p>Hunyadi István - Magyar Növényorvosi Kamara elnöke</p>
+                <p>Horváth Sándor - Növényvédelmi szaktanácsadó</p></li>
+            <li><h4>14:00 - II. Hordó Derbi (Jókai utca)</h4><br/></li>
+            <li><h4>15:00 Pincék nyitása</h4>
+                <p>Kóstold meg a gyarmati borokat! Látogass el a Nyitott pincékbe (demizson jelzi, hogy melyik pince várja a szomjas betérőket). Hozz magaddal poharat a kóstoláshoz, vagy vásárolj a helyszínen magadnak egyet.</p>
             </li>
-            <li><h4>16:00 - Szőlő kerülő túra gyerekeknek és felnőtteknek</h4><br/> (Játékos túra, miközben megismerhetitek a pincesor szépségeit, az állomásokon pedig izgalmas feladatokkal küzdhettek meg az értékes pontokért.
+            <li><h4>16:00 - Szőlő kerülő túra gyerekeknek és felnőtteknek</h4><p>(Játékos túra, miközben megismerhetitek a pincesor szépségeit, az állomásokon pedig izgalmas feladatokkal küzdhettek meg az értékes pontokért.</p>
             </li>
             <li><h4>Este: bál</h4></li>
-            <li></li>
+            <li><p>Állandó programok: ugrálóvár, kiállítás, kézműves foglalkozás, nyitott pincék látogatása, népi fajátékok, veterán gépek.</p></li>
         </ul>
-    
-    <p>Állandó programok: ugrálóvár, kiállítás, kézműves foglalkozás, nyitott pincék látogatása, népi fajátékok, veterán gépek.</p>
-    <p>Mindenkit szeretettel vár a Gyarmati Szőlősgazdák Borbarát Egyesülete</p>
+
     </div>
     </section>
 
 <section id="images">
     <h2 style="color: white;">Milyen volt a tavalyi esemény?</h2>
-    <img src="image1.jpg" alt="Image 1">
-    <img src="image2.jpg" alt="Image 2">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="/gallery" alt="Image description"></div>
+          <!-- More slides -->
+        </div>
+        <!-- If you need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     <!-- Add more images as needed -->
 </section>
 
@@ -115,7 +125,7 @@
     <h1>Jelentkezz a versenyre!</h1>
     <p style="color: white;"><b>A gombra kattintva átirányítunk a nevezési lapra.</b></p>
     <div class="text-center btn-shady-parent cta">
-        <a class="btn btn-shady mb-5" href="#signup">NEVEZÉS</a>
+        <a class="btn btn-shady mb-5" href="https://forms.gle/szSBPJUrC9b4fuUDA">NEVEZÉS</a>
     </div>
 </section>
 
@@ -134,7 +144,7 @@
     <p>&copy; 2024 Gyarmati Szőlősgazdák Borbarát Egyesülete | 
         9126 Gyarmat, Magyar utca 6 | Adószámunk: 18015322-1-08
         </p>
-    <p><a href="/adatkezelesi_nyilatkozat.html">Adatkezelési nyilatkozat</a></p>
+    <p><a href="/adatkezeles.html">Adatkezelési nyilatkozat</a></p>
 </footer>
 </body>
 </html>

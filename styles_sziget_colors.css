@@ -39,14 +39,12 @@ h1 {
     font-size: 35px;
     font-weight: 700;
     line-height: 2;
-    color: #1E1D24;
+    color: #41124b;
 }
 
 
 h2 {
     margin-bottom: 10px;
-    font-size: 30px;
-    line-height: 1.2;
 }
 
 
@@ -54,22 +52,13 @@ h4 {
     font-size: 20px;
     font-weight: 700;
     line-height: 1;
-    color: white;
-    padding-top: 20px;
-    background-color: #2F4550;
-    z-index: 8;
-    position: relative;
-    border-radius: 100px;
-    text-align: center;
-    padding: 8px 16px;
-    margin: 0 auto;
+    color: #6801c6;
 }
 
 p, li {
     font-family: 'Volte Rounded', Arial, sans-serif;
     font-weight: 500; /* Regular weight for paragraph text */
-    font-size: 18px;
-    line-height: 2;
+    font-size: 16px;
 }
 
 /* You might want to set medium font weight for specific elements */
@@ -80,7 +69,6 @@ strong {
 
 li {
     list-style: none;
-    color: white;
 }
 
 /* Reset default margin and padding */
@@ -122,7 +110,7 @@ header {
 .headline {
     padding: 32px 0;
     position: relative;
-    background-color: #ECECE4;
+    background-color: #d7c4f9;
 }
 
 header h1 {
@@ -187,6 +175,22 @@ footer {
     padding: 20px;
 }
 
+.first_paragraph {
+    background-color: #34076a;
+    color: white;
+    padding: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: VolteRounded !important;
+    position: relative;
+    z-index: 1;
+}
 a { 
     margin: 0; 
     padding: 0; 
@@ -247,47 +251,35 @@ a {
     text-transform: uppercase;
 } 
 
-.btn-shady-parent {
-    position: relative;
-    z-index: 1;
-}
-
-.btn-shady {
-    padding: 16px 32px;
-    border-radius: 30px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 24px;
-    text-transform: uppercase;
-    font-family: Volte Rounded;
-    background-color: #ff3c00;
-    position: relative;
+.btn-shady { 
+    padding: 4px 40px; 
+    border-radius: 30px; 
+    font-size: 18px; 
+    font-style: normal; 
+    font-weight: 900; 
+    line-height: 24px; 
+    text-transform: uppercase; 
+    font-family: Volte Rounded; 
+    background-color: #e0006a; 
+    position: relative; 
     color: #fff;
-}
-
-
-.btn-shady:hover {
-    background-color: #6801c6;
-    color: #ffbe00 !important;
 } 
-
-.btn-shady:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: #000;
-    border-radius: 30px;
-    transform: rotate(2.6deg) translate(2px,6px);
-}
-
 
 .btn:not([disabled]):not(.disabled) { 
     cursor: pointer;
+} 
+
+.btn-shady:after { 
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: -1; 
+    background-color: #000; 
+    border-radius: 30px; 
+    transform: rotate(2.6deg) translate(2px,6px);
 } 
 
 a:hover { 
@@ -304,48 +296,36 @@ a:hover {
     text-decoration: none;
 } 
 
-
-.first_paragraph {
-    background-color: #EEAB5E;
-    color: white;
-    padding: 40px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-family: VolteRounded !important;
-    position: relative;
-}
+.btn-shady:hover { 
+    background-color: #6801c6; 
+    color: #ffbe00;
+} 
 
 .cta {
     padding-top: 20px;
 }
 
 .race_usp, .partners {
-    background-color: #ECECE4;
+    background-color: #EAE6d5;
 }
 
 #race_top3 {
-    background-color: #ECECE4;
+    background-color: #009d8a;
     padding: 10px 0;
 }
 
 #signup {
-    background-color: #EEAB5E;
+    background-color: #009d8a;
     padding: 60px 0;
 }
 
 #programterv {
-    background-color: #91818A;
+    background-color: #009d8a;
     padding: 60px 0;
 }
 
 #images {
-    background-color: #EEAB5E ;
+    background-color: #6801c6;
     padding: 60px 0;
 }
 
@@ -353,19 +333,4 @@ a:hover {
     background-color: #002900;
     padding: 60px 0;
     color: white;
-}
-
-.crazytext {
-    background-color: #55917F;
-    z-index: 8;
-    transform: rotate(4deg);
-    color: white;
-    position: relative;
-    border-radius: 100px;
-    text-align: center;
-    max-width: calc(50% + 16px);
-    padding: 8px 16px;
-    min-width: -moz-max-content;
-    min-width: max-content;
-    margin: 0 auto;
 }
