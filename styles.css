@@ -365,12 +365,15 @@ a:hover {
 }
 
 .race_usp, .partners {
-    background-color: #ECECE4;
+    background-color: #B8DBD9;
 }
 
-#race_top3 {
+.race_usp {
+    padding-top: 20px;
+}
+
+.race_top3 {
     background-color: #ECECE4;
-    padding: 10px 0;
 }
 
 #signup {
