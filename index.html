@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Village Event</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/gallery.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ1EWVZTXT"></script>
@@ -39,9 +38,10 @@
 
     <!-- Your other page content here -->
 
-    <div style="background-color: white;">
-        <img src="res\banner_web.jpg" style="max-width: 100%;" />
-
+    <div class="banner-container" style="background-color: white; position: relative; text-align: center;">
+        <img src="res/banner_web.jpg" alt="Event Banner" style="max-width: 100%; display: block;">
+        <img src="res\hd_logo_500px_transparent.png" alt="Event Logo" class="event-logo">
+        <h2 class="event-date">2024. július 24.</h2>
     </div>
 
     <section class="headline">
@@ -99,20 +99,17 @@
     </div>
     </section>
 
-<section id="images">
-    <h2 style="color: white;">Milyen volt a tavalyi esemény?</h2>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"><img src="/gallery" alt="Image description"></div>
-          <!-- More slides -->
+    <section id="images">
+        <h2>Milyen volt a tavalyi esemény?</h2>
+        <div class="gallery-container">
+            <div class="gallery-item"><img src="gallery\354453646_584085103868924_7980953114271114223_n.jpg" alt="Image 1"></div>
+            <div class="gallery-item"><img src="gallery\354553526_584085147202253_6328986193900393109_n.jpg" alt="Image 2"></div>
+            <div class="gallery-item"><img src="gallery\354562159_584084923868942_6383426615335438453_n.jpg" alt="Image 3"></div>
+            <div class="gallery-item"><img src="gallery\354638902_584084440535657_4781310839415807109_n.jpg" alt="Image 4"></div>
+            <div class="gallery-item"><img src="gallery\355030570_584084990535602_7700340931051832665_n.jpg" alt="Image 5"></div>
+            <div class="gallery-item"><img src="gallery\355138607_584084123869022_2504466445353449002_n.jpg" alt="Image 6"></div>
         </div>
-        <!-- If you need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    <!-- Add more images as needed -->
-</section>
+    </section>
 
 <section id="youtube">
     <div class="video-container">

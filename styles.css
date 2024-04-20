@@ -111,7 +111,46 @@ body {
     }
 }
 
+.banner-container {
+    position: relative; /* Establish a stacking context for absolute positioning */
+    text-align: center; /* Center align the content */
+}
 
+.event-logo {
+    position: absolute;
+    top: 0; /* Position at the top of the container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Ensure exact horizontal centering */
+    max-width: 240px; /* Maximum width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 600px) {
+    .event-logo {
+        position: absolute;
+        top: 0; /* Position at the top of the container */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Ensure exact horizontal centering */
+        max-width: 160px; /* Maximum width for the logo */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    .banner-container h2 {
+        font-size: 14px;
+    }
+    
+}
+
+.event-date {
+    position: absolute;
+    bottom: 10px; /* Position at the bottom of the container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Ensure exact horizontal centering */
+    color: white; /* Set text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for legibility */
+    padding: 5px 10px; /* Some padding around the text */
+    border-radius: 5px; /* Optionally round corners */
+}
 
 header {
     color: #fff;
@@ -368,4 +407,29 @@ a:hover {
     min-width: -moz-max-content;
     min-width: max-content;
     margin: 0 auto;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+    grid-template-rows: repeat(3, 1fr); /* Creates three rows */
+    gap: 10px; /* Adds space between images */
+    max-width: 600px; /* Set a maximum width for the container */
+    margin: auto; /* Center the grid in the section */
+    padding-top: 10px;
+}
+
+.gallery-item {
+    overflow: hidden; /* Hides parts of the image that overflow the container */
+    aspect-ratio: 4 / 3; /* Adjusts the aspect ratio to form a rectangle (width / height) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item img {
+    width: 100%; /* Ensures the image covers the full width of its container */
+    height: 100%; /* Ensures the image covers the full height of its container */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-position: center; /* Focus the crop on the center of the image */
 }
