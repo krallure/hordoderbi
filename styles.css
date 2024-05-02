@@ -461,3 +461,10 @@ a:hover {
     object-fit: cover; /* Ensures the image covers the area without distortion */
     object-position: center; /* Focus the crop on the center of the image */
 }
+
+#rocketcar {
+    transform: rotate(9deg);
+    max-width: calc(73% + 16px);
+    margin-top: -140px;
+    opacity: 0.2;
+}
