@@ -56,13 +56,21 @@ h4 {
     line-height: 1;
     color: white;
     padding-top: 20px;
-    background-color: #2F4550;
+    background-color: #009c89;
     z-index: 8;
     position: relative;
     border-radius: 100px;
     text-align: center;
     padding: 8px 16px;
     margin: 0 auto;
+}
+
+span {
+    color: #000;
+}
+
+.futam {
+    background-color: #6801c6 !important;
 }
 
 p, li {
@@ -347,7 +355,6 @@ a:hover {
 
 .first_paragraph {
     background-color: #EEAB5E;
-    color: white;
     padding: 40px;
     display: -ms-flexbox;
     display: flex;
@@ -360,6 +367,7 @@ a:hover {
     font-family: VolteRounded !important;
     position: relative;
 }
+
 
 .cta {
     padding-top: 20px;
@@ -391,8 +399,16 @@ a:hover {
 }
 
 #programterv {
-    background-color: #91818A;
+    background-color: #eae6d5;
     padding: 60px 0;
+}
+
+#programterv p {
+    color: #000 !important;
+}
+
+#programterv h2 {
+    color: #000 !important;
 }
 
 #images {
