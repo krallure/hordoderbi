@@ -418,8 +418,14 @@ a:hover {
 
 #footer {
     background-color: #2F4550;
-    padding: 60px 0;
+    padding: 60px 10px;
     color: white;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
 }
 
 .crazytext {
@@ -467,4 +473,8 @@ a:hover {
     max-width: calc(73% + 16px);
     margin-top: -140px;
     opacity: 0.2;
+}
+
+.tamogato_logo {
+    max-width: 60px;
 }
